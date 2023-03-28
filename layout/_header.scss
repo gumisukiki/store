@@ -1,0 +1,97 @@
+.l-header {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  z-index: map-get($layer, "header" );
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  //nav
+  &__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    padding: 60px 25px;
+    background-color: #121212;
+    color: #fff;
+    height: 100%;
+    z-index: map-get($layer, "nav" );
+    display: none;
+
+  }
+  //ナブメニュー
+
+  &__nav-menu {
+    border-top: solid 1px #fff;
+    margin-bottom: 60px;
+
+    li {
+      padding: 20px 0;
+      border-bottom: 1px solid #ffffff;
+    }
+  }
+  &__nav-sns {
+    li {
+      padding: 10px 0;
+    }
+
+  }
+
+  //トグルボタン
+  &__toggle_btn {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: map-get($layer, "toggle_btn" );
+
+    span {
+      position: absolute;
+      width: 30px;
+      height:2px ;
+      background-color: #333333;
+      border-radius: 4px;
+      :nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 10px;
+      }
+     
+      &:nth-child(3) {
+        top: 20px;
+
+      }
+
+    }
+  }
+
+  &__mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+    z-index: map-get($layer, "mask" );
+    opacity: .8;
+    cursor: pointer;
+    display: none;
+  }
+
+
+
+
+
+  //openクラスがついたら
+  .open {
+    opacity: 0;
+  }
+}

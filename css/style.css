@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ===============================================
+# セクション間のマージン
+=============================================== */
+.u-mt60 {
+  margin-top: 60px;
+}
+
+.u-mt100 {
+  margin-top: 100px;
+}
+
+.sec-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.l-header {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.l-header__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.l-header__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  padding: 60px 25px;
+  background-color: #121212;
+  color: #fff;
+  height: 100%;
+  z-index: 20;
+  display: none;
+}
+.l-header__nav-menu {
+  border-top: solid 1px #fff;
+  margin-bottom: 60px;
+}
+.l-header__nav-menu li {
+  padding: 20px 0;
+  border-bottom: 1px solid #ffffff;
+}
+.l-header__nav-sns li {
+  padding: 10px 0;
+}
+.l-header__toggle_btn {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 20;
+}
+.l-header__toggle_btn span {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #333333;
+  border-radius: 4px;
+}
+.l-header__toggle_btn span :nth-child(1) {
+  top: 0;
+}
+.l-header__toggle_btn span:nth-child(2) {
+  top: 10px;
+}
+.l-header__toggle_btn span:nth-child(3) {
+  top: 20px;
+}
+.l-header__mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  z-index: 10;
+  opacity: 0.8;
+  cursor: pointer;
+  display: none;
+}
+.l-header .open {
+  opacity: 0;
+}
+
+.l-footer {
+  background-color: #121212;
+  color: #FFFFFF;
+  font-size: 12px;
+  text-align: center;
+}
+
+.l-feature__inner {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.l-feature__item {
+  -webkit-box-shadow: 0 0 8px 4px #ccc;
+          box-shadow: 0 0 8px 4px #ccc;
+}
+.l-feature__img img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.l-feature__content {
+  padding: 30px;
+}
+.l-feature__content .cat {
+  margin-bottom: 20px;
+}
+.l-feature__content .text {
+  margin-bottom: 20px;
+}
+.l-contact {
+  background-color: #121212;
+  color: #FFFFFF;
+  padding: 50px 0 60px 0;
+}
+.l-contact__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.l-contact__text {
+  width: 45%;
+}
+.l-contact__text p {
+  margin-bottom: 30px;
+}
+.l-contact__form {
+  width: 45%;
+}
+.l-contact__form input, .l-contact__form textarea {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.l-contact__button input {
+  width: 200px;
+  background-color: #121212;
+  color: #FFFFFF;
+  border: solid 1px #fff;
+  padding: 12px 0;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.l-contact__button input:hover {
+  color: #202020;
+  background-color: #fff;
+}

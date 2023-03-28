@@ -1,0 +1,55 @@
+.l-contact {
+  background-color: #121212;
+  color: #FFFFFF;
+  padding: 50px 0 60px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  &__text {
+    width: 45%;
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+
+  &__form {
+    width: 45%;
+
+    input,textarea {
+      width: 100%;
+      background-color: #FFFFFF;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  } 
+
+
+  &__button {
+    input {
+      width: 200px;
+      background-color: #121212;
+      color: #FFFFFF;
+      border: solid 1px #fff;
+      padding: 12px 0;
+      margin-bottom: 0;
+      cursor: pointer;
+
+      &:hover {
+        color: #202020;
+        background-color: #fff;
+      }
+
+    }
+  }
+
+
+
+
+}
